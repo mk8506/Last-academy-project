@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" th:href="@{/css/reset.css}"  type="text/css"/>
+  <link rel="stylesheet" th:href="@{/css/common.css}" type="text/css"/>
+  <link rel="stylesheet" th:href="@{/css/index.css}" type="text/css"/>
+  <link rel="stylesheet" href="css/glider.css" type="text/css"/>
+  <link rel="stylesheet" href="css/dropdown.css" type="text/css"/>
+  <link rel="stylesheet" href="css/glide.core.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/glide.theme.min.css" type="text/css"/>
+</head>
+<body>
+  <!-- <div w3-include-html="header.html"></div> -->
+  <div th:replace="~{fragments/header :: my-header}"></div>
+
+  <!--main-->
+  <main>
+    <div><a th:href="@{/get/cat}">Click here to go to category.html</a></div>
+
+
+    <div class="part-zero">
+      <figure style="width: 100%; height: auto;">
+        <img src="./assets/img/prowebp.webp" alt="pro"/>
+      </figure>
+      <div>
+        <p>all pants on sale for the fam</p>
+        <p><a href="#">SHOP NOW</a></p>
+      </div>
+    </div>
+
+    <!--part-one: img + title + button-->
+    <div class="part-one">
+      
+    </div>
+    <!--part-two: product img + title + price-->
+    <div class="part-two">
+      <h1 class="part-two-title">WE PICKED THESE JUST FOR YOU...</h1>
+
+      <!--loop1-->
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides loop">
+            <!--js glider__slide-->
+          </div>
+        </div>
+        <!--arrows-->
+      </div>
+
+      <!--loop2-->
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides loop">
+            <!--js glider__slide-->
+          </div>
+        </div>
+        <!--arrows-->
+      </div>
+
+      <div class="part-two-title">
+        <h1>Even more new arrivals!</h1>
+        <p><a href="#Women">Women</a> <a href="#Men">Men</a> <a href="#Girls">Girls</a> <a href="#Boys">Boys</a> <a href="#ToddlerGirls">ToddlerGirls</a> <a href="#ToddlerBoys">ToddlerBoys</a> <a href="#BabyGirls">BabyGirls</a> <a href="#BabyBoys">BabyBoys</a> <a href="#Maternity">Maternity</a></p>
+      </div>
+
+      <!--loop3-->
+      <div class="glide loop3 center">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides loop">
+            <!--js glider__slide-->
+          </div>
+        </div>
+        <!--arrows-->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- <div w3-include-html="footer.html"></div> -->
+  <div th:replace="~{fragments/footer :: my-footer}"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <script src="./assets/js/import.js"></script>
+  <script src="./assets/js/glider.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+</body>
+</html>

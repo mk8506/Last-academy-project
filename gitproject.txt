@@ -1,0 +1,28 @@
+add people -> email sent
+check email
+added? then others: clone
+one person - push
+others : push error
+always pull before push
+edit others' files -> pull and push
+one edit his files -> wipes off his changes when pull
+so should commit before pull
+
+---
+Follow these steps-
+
+Add your files to the commit-
+
+git add <filename>
+Commit those files with a commit message-
+
+git commit -m "added blah feature"
+Then, Pull(preferably rebase) to get the latest code from the repo-
+
+git pull --rebase
+Then push(YAY!)-
+
+git push -u origin master
+About what they would have meant(looking at Jenkins CI thing you told)-
+
+First pull the code(hard reset also maybe, as I do it sometimes) from repo to your local directory. Then if you have a separate branch or different local working directory, make changes from there to this new location(pull) and then commit your changes. Then finally push.

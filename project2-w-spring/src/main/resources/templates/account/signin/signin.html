@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+</head>
+<body>
+  <a></a><br>
+  <p>ONE MEMBERSHIP. FOUR BRANDS.</p><br>
+  <img/><br>
+
+  <div th:if="${myEmail = '' or myEmail = 0}">
+    <h1>Sign In | Join</h1>
+    <p>Enter your email to get started.</p>
+    <form>
+      <input type="email"/>
+      <button type="submit">CONTINUE</button>
+    </form>
+  </div>
+
+  <!--맞으면-->
+  <div th:if="${myEmail != '' or myEmail > 0}">
+    <h1>Welcome back!</h1>
+    <p>
+      Sign in for free shipping on all orders $50+, points on each purchase, and more!<br/>
+      <b th:text="${myEmail}"></b><br/>
+      <a>Use another email address</a><br/>
+    </p>
+    <form>
+      <input type="password"/>
+      <p>Passwords must contain 8 to 24 characters including an uppercase letter, a lowercase letter, a number, and a special character.</p>
+      <a>Forgot your password?</a><br/>
+      <p>
+        Keep me signed in on this device. Uncheck if using a public device/network.More information</p>
+      <button type="submit">SIGN IN</button>
+    </form>
+  </div>
+
+  <div>
+    <h1>Rewards Members, You’ll Enjoy…</h1>
+    <ul>
+      <li>Free, Fast Shipping on Orders of $50+</li>
+      <li>Points on Every Purchase</li>
+      <li>Exclusive Savings and Bonuses</li>
+    </ul>
+  </div>
+  <p><img/><span><a>Manage</a> your Navyist Rewards Credit Card</span></p>
+</body>
+</html>

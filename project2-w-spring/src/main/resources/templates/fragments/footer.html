@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <footer th:fragment="my-footer" class="center">
+    <!--from here sitewide-->
+    <!--part three: p, img-->
+    <div class="part-three flex"><!--click -> popup-->
+      <div>
+        <h1>4 BRANDS 1 EASY CHECKOUT</h1>
+        <p>REWARDS MEMBERS get FREE<br/>SHIPPING on<br/>
+          all orders $50+ <a>Sign in</a> or <a>Join</a> <a>DETAILS</a></p>
+      </div>
+      <div class="four-logos-container">
+        <img src="./assets/img/old-navy-footer/EDFS_Footer.svg" alt="four logos"/>
+      </div>
+    </div>
+
+    <div class="subscribe">
+      <div class="flex" style="margin-bottom: 20px; width: 100%;">
+        <!--email-->
+        <div class="subscribe-three" style="padding: 100px 40px">
+          <h2>SIGN UP FOR EMAIL</h2>
+          <p>Be the first to know about new arrivals, buzzy sales, & other very nice things.</p>
+          <form>
+            <input type="email" placeholder="ENTER EMAIL"/><br/>
+            <button type="submit">JOIN</button>
+          </form>
+        </div>
+        <!--mobile number-->
+        <div class="subscribe-three" style="padding: 10px 25px;">
+          <img src="./assets/img/old-navy-footer/footer-mobile.svg" alt="footer mobile"/>
+          <form class="flex" style="justify-content: space-evenly;">
+            <img style="width: 30px;" src="./assets/img/old-navy-footer/phone-picture.svg" alt="phone picture"/>
+            <input type="tel" placeholder="Mobile Number"/>
+            <button type="submit">SUBMIT</button>
+          </form>
+          <p style="font-size: 10px; margin-top: 20px;">By entering your phone number and submitting this form, you consent to receive recurring automated personalized (e.g. cart reminders) and marketing text messages from Old Navy at the cell number provided that may be sent via an automated system.
+            <br/>Terms & Conditions apply. Learn more about our privacy practices in our Privacy Policy.
+            <br/>Consent is not a condition of purchase. Reply HELP for help and STOP to opt out. Msg frequency varies. Msg and data rates apply.</p>
+        </div>
+        <!--learn more IMportant*-->
+        <div class="subscribe-three">
+          <!--gilder library-->
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides glide-ul2">
+                <!--here comes js-->
+              </ul>
+            </div>
+            <!--arrows--> <!--반복되는 코드-->
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
+                <img src="./assets/img/icons/arrow.gif" alt="left arrow" class="left-arrow"/>
+              </button>
+              <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
+                <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-media-container">
+      <figure>
+        <img src="./assets/img/social-media.svg" alt="social-media"/>
+      </figure>
+    </div>
+    <div class="more flex">
+      <ul>
+        <li><h1>CUSTOMER SERVICE</p></li>
+        <li><p>Customer Service</p></li>
+        <li><p>Shipping</p></li>
+        <li><p>Returns</p></li>
+        <li><p>Buy gift cards</p></li>
+        <li><p>Size charts</p></li>
+        <li><p>Buy Online. Pick up in-store.</p></li>
+      </ul>
+      <ul>
+        <li><h1>LEARN MORE</h1></li>
+        <li><p>Our Affiliate program</p></li>
+        <li><p>Super Cash</p></li>
+        <li><p>Careers @ Old Navy</p></li>
+        <li><p>Sustainability</p></li>
+      </ul>
+      <ul>
+        <li class="on-container"><img src="./assets/img/old-navy-footer/Navyist_logo.svg" alt="on"/></li>
+        <li><p>My Points and Rewards</p></li>
+        <li><p>Explore Benefits</p></li>
+        <li><p>Pay credit card bill</p></li>
+        <li><p>Activate credit card</p></li>
+        <li><p>Join Navyist Rewards - it’s Free</p></li>
+        <li><p>or Apply Now for a Credit Card</p></li>
+      </ul>
+      <ul>
+        <li><h1>FIND US</h1></li>
+        <li><p>1-800-OLD-NAVY</p></li>
+        <li><p>(1.800.653.6289)</p></li>
+        <li><p>Email sign-up</p></li>
+        <li><p>Store Locator</p></li>
+      </ul>
+
+    </div>
+    <div class="policy">
+      <div>© 2024 Old Navy, LLC|Privacy Policy|Your Privacy Choices|Your California Privacy Rights|California Transparency in Supply Chains Act|Terms of Use|Careers|Sustainability|Navyist Rewards|About Gap Inc.</div>
+      <div>Americans with Disabilities Act|Gap Inc. Policies</div>
+    </div>
+
+    <div class="fixed-bottom">
+      <div>
+        <p>TODAY ONLY! &dollar;12 + &dollar;14 FLEECE JOGGERS</p>
+        <p>TAP FOR MORE WAYS TO SAVE</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
